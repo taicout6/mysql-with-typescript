@@ -31,7 +31,6 @@ const updateUser = async (id: number, user: IUser) => {
 
 const deleteUser = async (id: number): Promise<void> => {
   await connection.execute('DELETE FROM Users WHERE id=?', [id]);
-  return;
 };
 
 export default {
